@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV converter Documentation</title>
+<style>
+/* style goes here */
+</style>
+</head>
+<body>
+<main class="main-body">
+<h1>csv-parser</h1>
+  
+<h2>description</h2>
+  
+<p>this app service is used to parse and convert CSV file to JSON array.</p>
+
+<h2>endpoints</h2>
+  
+<a href="/api/upload" target= "_blank">/api/upload</a>
+  
+<ul>
+<li>methods - post</li>
+<li>payload - csv file</li>
+<li>enctype - multipart/form-data</li>
+<li>mimetype - text/csv or text/comma-separated-values</li>
+<li>fieldname - csv</li>
+</ul>
+  
+<h2>usage</h2>
+  
+<p>send a post request to <a href="/api/upload" target= "_blank">/api/upload</a>, the fieldname of the uploaded file must be csv and the column headers must be <em>name</em>, <em>organization</em>, <em>award</em>,<em> date</em>, <em>description</em>, <em>certificate_number</em>
+</p>
+  
+<h2>example usage</h2>
+  
+<p>visit <a href="/api/upload/test" target= "_blank">/api/upload/test</a>, upload a csv file with the following heading:</p>
+<ul>
+<li> name </li>
+<li>organization</li>
+<li>description</li>
+<li>award</li>
+<li>date</li>
+<li>certificate_number</li>
+</ul>
+<p>view returned JSON array</p>
+
+<h2>bug reports</h2>
+  
+<p>report any bugs or issues here
+<a href= "https://github.com/chisomchris/csv-parser/issues
+ " target= "_blank">https://github.com/chisomchris/csv-parser/issues</a>
+</p>
+</main>
+</body>
+</html>
